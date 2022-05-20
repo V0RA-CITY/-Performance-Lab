@@ -8,12 +8,14 @@ using namespace std;
 
 int main()
 {
+	setlocale(LC_ALL, "Rus");
 	string file;
 
 	cout << "Введите название файла :";
 	cin >> file;
 
 	ifstream fin(file + ".txt" );
+
 	vector<int> nums;
 	int sum = 0;
 	int result;
