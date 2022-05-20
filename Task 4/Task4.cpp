@@ -2,12 +2,18 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	ifstream fin("input.txt" );
+	string file;
+
+	cout << "Введите название файла :";
+	cin >> file;
+
+	ifstream fin(file + ".txt" );
 	vector<int> nums;
 	int sum = 0;
 	int result;

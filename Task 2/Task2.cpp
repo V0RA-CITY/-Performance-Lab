@@ -2,6 +2,7 @@
 #include <vector>
 #include <locale>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -10,15 +11,24 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
 
+    string file1;
+    string file2;
+
+    cout << "Введите имя 1 файла :";
+    cin >> file1;
+
+    cout << "Введите имя 2 файла :";
+    cin >> file2;
+
     float a, b, c; 
     float x, y;
-    ifstream fin("input1.txt");
+    ifstream fin(file1 + ".txt");
 
     fin >> a;
     fin >> b;
     fin >> c;
 
-    ifstream fin2("input2.txt");
+    ifstream fin2( file2 + ".txt");
 
     while (!fin2.eof())
     {
