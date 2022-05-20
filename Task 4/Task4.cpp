@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	ifstream fin("input.txt" );
+	ifstream fin("input.txt");
 	vector<int> nums;
 	int sum = 0;
 	int result;
